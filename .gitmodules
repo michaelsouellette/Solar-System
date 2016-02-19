@@ -1,0 +1,3 @@
+[submodule "sass/sass_mixins"]
+	path = sass/sass_mixins
+	url = https://github.com/michaelsouellette/sass_mixins.git

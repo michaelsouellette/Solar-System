@@ -1,0 +1,32 @@
+{
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "Solar System example from Code Academy",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelsouellette/Solar-System.git"
+  },
+  "keywords": [
+    "Solar",
+    "System",
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune",
+    "Pluto"
+  ],
+  "author": "Michael Ouellette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelsouellette/Solar-System/issues"
+  },
+  "homepage": "https://github.com/michaelsouellette/Solar-System#readme"
+}
