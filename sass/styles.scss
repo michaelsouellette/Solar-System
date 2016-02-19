@@ -158,6 +158,24 @@ $earth-rotation: 1s;
         @include animation(spin-right $mars-orbit linear infinite);
     }
 
+    .asteroid-orbit {
+        $mars-orbit: $earth-rotation * 1.88;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 1000px;
+        height: 1000px;
+        margin-top: -500px;
+        margin-left: -500px;
+
+        border-width: 2px;
+        border-style: dotted;
+        border-color: white;
+        @include border-radius(50%);
+        @include animation(spin-right $mars-orbit linear infinite);
+    }
+
     .jupiter {
         /* Style jupiter */
         position: absolute;
