@@ -13,7 +13,7 @@ html, body {
     background-color: $black;
 }
 
-$earth-rotation: 10s;
+$earth-rotation: 1s;
 
 .solarSystem {
     position: relative;
@@ -52,6 +52,7 @@ $earth-rotation: 10s;
     }
 
     .mercury-orbit {
+        $mercury-orbit: $earth-rotation * .24;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -65,7 +66,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 2s linear infinite);
+        @include animation(spin-right $mercury-orbit linear infinite);
     }
 
     .venus {
@@ -81,6 +82,7 @@ $earth-rotation: 10s;
     }
 
     .venus-orbit {
+        $venus-orbit: $earth-rotation * .615;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -94,7 +96,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 6s linear infinite);
+        @include animation(spin-right $venus-orbit linear infinite);
     }
 
     .earth {
@@ -139,6 +141,7 @@ $earth-rotation: 10s;
     }
 
     .mars-orbit {
+        $mars-orbit: $earth-rotation * 1.88;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -152,7 +155,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 19s linear infinite);
+        @include animation(spin-right $mars-orbit linear infinite);
     }
 
     .jupiter {
@@ -168,6 +171,7 @@ $earth-rotation: 10s;
     }
 
     .jupiter-orbit {
+        $jupiter-orbit: $earth-rotation * 11.86;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -181,7 +185,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 119s linear infinite);
+        @include animation(spin-right $jupiter-orbit linear infinite);
     }
 
     .saturn {
@@ -197,6 +201,7 @@ $earth-rotation: 10s;
     }
 
     .saturn-orbit {
+        $saturn-orbit: $earth-rotation * 29.4;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -210,7 +215,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 294s linear infinite);
+        @include animation(spin-right $saturn-orbit linear infinite);
     }
 
     .uranus {
@@ -226,6 +231,7 @@ $earth-rotation: 10s;
     }
 
     .uranus-orbit {
+        $uranus-orbit: $earth-rotation * 84;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -239,7 +245,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 840s linear infinite);
+        @include animation(spin-right $uranus-orbit linear infinite);
     }
 
     .neptune {
@@ -255,6 +261,7 @@ $earth-rotation: 10s;
     }
 
     .neptune-orbit {
+        $neptune-orbit: $earth-rotation * 164.79;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -268,7 +275,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 1640s linear infinite);
+        @include animation(spin-right $neptune-orbit linear infinite);
     }
 
     .pluto {
@@ -284,6 +291,7 @@ $earth-rotation: 10s;
     }
 
     .pluto-orbit {
+        $pluto-orbit: $earth-rotation * 248;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -297,7 +305,7 @@ $earth-rotation: 10s;
         //border-style: dotted;
         //border-color: white;
         @include border-radius(50%);
-        @include animation(spin-right 2480s linear infinite);
+        @include animation(spin-right $pluto-orbit linear infinite);
     }
 }
 
